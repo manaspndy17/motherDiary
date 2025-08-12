@@ -29,9 +29,41 @@ Users can upload their **profile picture** and **cover image**, manage settings,
 
 ---
 
+---
+
+## How to Run
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/household-management.git
+
+2.Open the project in your IDE (Eclipse, IntelliJ, etc.)
+
+3.Create a MySQL database and update application.properties:
+
+   spring.datasource.url=jdbc:mysql://localhost:3306/your_database
+   spring.datasource.username=your_username
+   spring.datasource.password=your_password
+   
+4.Build and run the project:
+
+  mvn clean install
+  mvn spring-boot:run
+
+5.Open the application in a browser:
+
+  http://localhost:8080
+
+  
 
 
 
 
 
-## 📂 Project Structure
+
+
+
+
+
+
+
+
