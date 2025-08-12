@@ -1,0 +1,112 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+   
+    margin: 0;
+    padding: 0;
+   background-image: url('/img/setting.jpg');
+    background-size: cover;
+    
+
+}
+
+.top-bar {
+    height: 40px;
+    background-color: #954251;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 20px;
+}
+.top-bar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+marquee{
+    margin :auto;
+    align-items: center;
+    width: 40%;
+}
+
+.settings-container {
+    width: 90%;
+    max-width: 700px;
+    margin: 60px auto;
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.settings-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.settings-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.settings-form input[type="text"],
+.settings-form input[type="email"],
+.settings-form input[type="file"] {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fafafa;
+    transition: border-color 0.3s;
+}
+
+.settings-form input[type="text"]:focus,
+.settings-form input[type="email"]:focus,
+.settings-form input[type="file"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.settings-form button {
+    width: 100%;
+    background-color: #784186;
+    color: white;
+    padding: 12px 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.settings-form button:hover {
+    background-color: #4f2b58;
+}
+
+.image-preview {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.image-preview img {
+    max-width: 120px;
+    height: auto;
+    border-radius: 50%;
+    margin: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.footer{
+    background: black;
+    bottom: 0%;
+    height:fit-content;
+    color: aliceblue;
+    text-align: center;
+    padding: 10px 0px;
+}

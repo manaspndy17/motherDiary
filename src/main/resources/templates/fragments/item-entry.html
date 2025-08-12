@@ -1,0 +1,28 @@
+<div th:fragment="content" >
+    <link rel="stylesheet" th:href="@{/css/item_entry.css}" />
+    <div class="item-entry-container">
+
+        <div th:if="${#lists.isEmpty(items)}" class="no-items-message">
+            <p>No items added yet.</p>
+        </div>
+
+        <div th:if="${!#lists.isEmpty(items)}" class="item-grid">
+            <div class="item-card" th:each="item : ${items}">
+                <img th:src="${item.itemImage}" alt="Item Image" class="item-image" />
+
+                <h3 th:text="${item.itemName}"></h3>
+
+                <form th:action="@{/item/itemEntry}" method="post">
+                    <input type="hidden" name="itemId" th:value="${item.id}" />
+
+                    <div class="form-group">
+                        <label>Units Bought:</label>
+                        <input type="number" name="unit" min="1" required />
+                    </div>
+
+                    <button type="submit">Add</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

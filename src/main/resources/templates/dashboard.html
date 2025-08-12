@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="/css/dashboard.css">
+</head>
+
+<body>
+
+    <div class="top-bar">
+        <marquee th:text="'Welcome  ' + ${user.username}+' !!'"></marquee>
+        <div class="icons">
+
+
+            <a href="/logout">Logout</a>
+            <a href="/settings">⚙️</a>
+        </div>
+    </div>
+
+    <div class="banner">
+    <img th:src="${user != null && user.coverImage != null ? user.coverImage : '/coverImg/default.jpeg'}" class="banner-img">
+    
+    <img th:src="${user != null && user.profileImage != null ? user.profileImage : '/profileImg/default.png'}" class="profile-pic">
+   </div>
+
+
+    <div class="main">
+        <aside class="sidebar">
+            <a th:href="@{/dashboard(page='add-item')}">Add Item</a>
+            <a th:href="@{/dashboard(page='item-entry')}">Item Entry</a>
+            <a th:href="@{/dashboard(page='expenditure')}">Expenditure</a>
+        </aside>
+
+
+        <section class="content" th:switch="${page}">
+            <div th:case="'add-item'" th:include="~{fragments/add-item :: content}"></div>
+            <div th:case="'item-entry'" th:include="~{fragments/item-entry :: content}"></div>
+            <div th:case="'expenditure'" th:include="~{fragments/expenditure :: content}"></div>
+        </section>
+
+    </div>
+
+    <footer class="footer">
+        
+            All right reserved © | www.motherDiary.com | 2024 pvt. ltd.    
+
+        
+    </footer>
+    <script src="https://kit.fontawesome.com/e69507a661.js" crossorigin="anonymous"></script>
+</body>
+    
+</html>

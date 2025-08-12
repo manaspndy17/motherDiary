@@ -1,0 +1,119 @@
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fae2e2;
+}
+
+/* Top thin menu bar */
+.top-bar {
+    height: 40px;
+    background-color: #954251;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.top-bar .icons a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+/* Banner cover image */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-color: #ccc;
+    
+}
+
+.banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Profile image - circular, overlapping banner */
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid white;
+    position: absolute;
+    bottom: -60px;
+    left: 50px;
+    background-color: white;
+    object-fit: cover;
+    z-index: 2;
+    box-shadow:  4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Main layout */
+.main {
+    display: flex;
+    margin-top: 80px; /* space for profile image */
+}
+
+/* Sidebar menu */
+.sidebar {
+    width: 200px;
+    background-color: #954251;
+    padding: 20px 10px;
+    border-right: 1px solid #ddd;
+    height: calc(100vh - 240px); /* subtract banner + topbar height */
+    position: sticky;
+    top: 60px;
+    
+    border: 1px solid #ccc;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar a {
+    display: block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    
+}
+
+.sidebar a:hover {
+    
+    background-color: rgba(159, 36, 81, 0.267);
+    padding-top : 2px;
+    padding-bottom :2px ;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+   
+}
+
+/* Central content area */
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+
+marquee{
+    margin :auto;
+    align-items: center;
+    width: 40%;
+}
+
+.footer{
+    background: black;
+    bottom: 0%;
+    height:fit-content;
+    color: aliceblue;
+    text-align: center;
+    padding: 10px 0px;
+}

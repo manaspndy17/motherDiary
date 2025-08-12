@@ -1,0 +1,46 @@
+<!-- fragments/expenditure.html -->
+<div th:fragment="content">
+    <link rel="stylesheet" th:href="@{/css/expenditure.css}">
+    <h2>Expenditure Report</h2>
+
+    <!-- Filter Form -->
+    <form method="get" action="/dashboard">
+        <input type="hidden" name="page" value="expenditure" />
+        <label for="startDate">Start Date:</label>
+        <input type="date" name="startDate" id="startDate" />
+        <label for="endDate">End Date:</label>
+        <input type="date" name="endDate" id="endDate" />
+        <button type="submit">Filter</button>
+    </form>
+
+    <!-- Expenditure Table -->
+    <table border="1" cellpadding="8" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Item Name</th>
+                <th>Unit Price</th>
+                <th>Units</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="entry : ${expenditures}">
+                <td th:text="${entry.date}">2025-08-07</td>
+                <td th:text="${entry.itemName}">Milk</td>
+                <td th:text="${entry.unitPrice}">50</td>
+                <td th:text="${entry.units}">2</td>
+                <td th:text="${entry.total}">100</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4"><strong>Total Expenditure:</strong></td>
+                <td>
+                    <span th:text="${#numbers.formatDecimal(grandTotal, 1, 'COMMA', 2, 'POINT')}"></span>
+
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</div>

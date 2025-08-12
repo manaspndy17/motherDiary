@@ -1,0 +1,106 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.background{
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    overflow: hidden;
+  }
+  .top-bar {
+    height: 40px;
+    background-color: #954251;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 20px;
+}
+.top-bar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+ 
+.background video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1; 
+  }
+
+.signupbox{
+    background: #ffffffa1;
+    width: 24%;
+    margin: auto;
+    border-radius: 23px;
+    height: 350px;
+    top: 203px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+ }
+ .signupbox form{
+    display: flex;
+    flex-direction: column;
+    
+ }
+ .form{
+    margin:auto;
+ }
+ .signupbox input {
+    width: 100%;
+    
+    margin: 10px 0px;
+    border-radius: 10px;
+    padding: 5px 5px;
+    align-items: center;
+    border: none;
+ }
+ .btn{
+     background: none;
+     border: solid 1px rgb(86, 42, 24);
+     border-radius: 10px;
+     padding: 5px 5px;
+     color: rgb(86, 42, 24);
+     width: 50%;
+     
+    
+     margin: auto;
+ }
+ .btn:hover{
+    color: white;
+    background: rgb(86, 42, 24);
+    cursor: pointer;
+}
+ .signupbox p{
+    margin-top: 20px;
+ }
+ .signupbox h2{
+         font-size: 30px;
+ }
+ .text a{
+    text-decoration: none;
+    color: grey;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    
+
+}
+.footer{
+    background: black;
+    bottom: 0%;
+    height:fit-content;
+    color: aliceblue;
+    text-align: center;
+    padding: 10px 0px;
+}

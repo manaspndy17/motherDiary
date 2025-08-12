@@ -1,0 +1,231 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    background-color: brown ;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    margin-left: 2%;
+}
+.logo img{
+    height: 60px;
+    width: 83px;
+}
+.logo h6{
+    top: 31%;
+    position: relative;
+    margin-left: 10%;
+    color: white;
+    font-size: medium;
+    font-family: cursive;
+
+}
+.button{
+    display: flex;
+    flex-direction: row;
+    margin-right: 2%;
+    width: 143px;
+}
+.button a{
+    margin: auto;
+}
+.button i{
+    color: aliceblue;
+    position: relative;
+    top: 39%;
+}
+
+.btn{
+    background: none;
+     border: solid 1px rgb(255, 255, 255);
+     border-radius: 10px;
+     padding: 5px 5px;
+     color: rgb(255, 255, 255);
+   
+}
+
+.btn:hover{
+    color: brown;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: rgba(70, 60, 60, 0.651) 3px 3px 2px 1px , rgba(255, 255, 255, 0.366) -3px -3px 2px -3px;
+}
+.background{
+    background: rgba(255, 0, 0, 0.44) url('/img/homeheader.jpg');
+    background-size: cover;
+    height: 650px;
+    background-position: center;
+    background-blend-mode: darken;
+    
+    
+    
+}
+.box{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    color: white;
+    top: 40%;
+    position: relative;
+    
+
+}
+
+.text h1{
+    font-size: 418%;
+}
+
+
+.text button{
+    position: relative;
+    width: 115px;
+    background: none;
+    border: solid 1px rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 5px 5px;
+    color: rgb(255, 255, 255);
+    margin: auto;
+    
+    height: 40px;
+    top: 10px;
+}
+
+.feature{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+.fbox{
+    display: flex;
+    flex-direction: row;
+    margin:50px 0px;
+    
+}
+
+.fimage img{
+    height: 400px;
+    width: 400px;
+    
+    position: relative;
+   
+   box-shadow: rgb(29, 29, 30) 6px 5px 8px 0px, rgb(212 212 225 / 25%) -3px -5px 8px 0px;
+
+   
+}
+
+.fimage{
+    box-shadow: rgb(131, 27, 10) 11px 9px 0px -35px, rgb(131, 27, 10) -55px -55px 0px -35px;
+    
+}
+.para{
+    
+    top:39%;
+    position: relative;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.para h1{
+    font-size: 41px;
+    font-family: cursive;
+    text-align: center;
+    top: 39%;
+    position: relative;
+}
+.para p{
+    text-align: justify;
+    margin: auto;
+    width: 484px;
+    top: 39%;
+    position: relative;
+}
+.rfbox{
+    flex-direction: row-reverse;
+    display: flex;
+    justify-content: end;
+    
+}
+.footer{
+    background: black;
+    bottom: 0%;
+    height:fit-content;
+    color: aliceblue;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.enquiry{
+    background: url('/img/goodbye.jpg');
+    height: 450px;
+    
+    z-index: -1;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+
+.form {
+
+    background-color: rgb(244 244 244 / 73%);
+    width: 24%;
+    
+    text-align: center;
+    border-radius: 20px 0px 20px 0px;
+    top: 50px;
+    font-size: 27px;
+    font-family: cursive;
+    position: relative;
+    left: 92px;
+    box-shadow: rgba(70, 60, 60, 0.651) 3px 3px 10px 1px, rgba(255, 255, 255, 0.366) -3px -3px 2px -1px;
+}
+
+
+.form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height:300px;
+}
+.form input{
+    padding: 6px 6px;
+    border: none;
+    border-radius: 10px;
+    width: 84%;
+    margin: auto;
+
+}
+.form h1{
+  margin-bottom: 20px;
+}
+.form textarea{
+  
+   margin: auto;
+   width: 83%;
+   padding: 7px;
+   height: 106px;
+}
+
+.form button{
+  padding: 5px 0px;
+  border-radius: 10px;
+  width: 25%;
+  margin: auto;
+  background: none;
+}
+.form button:hover{
+    background-color: white;
+   
+}

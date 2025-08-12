@@ -1,0 +1,86 @@
+body{
+  margin: 0cm;
+  padding: 0cm;
+  background-image: url("/img/signinbg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+}
+.top-bar {
+    height: 40px;
+    background-color: #954251;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 20px;
+}
+.top-bar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.signinbox{
+    flex-direction: column;
+    margin-top: 250px;
+    display: flex;
+    width: 300px;
+    margin-left: 70px;
+    align-items: center;
+    color :  rgb(117 67 44);
+    margin-bottom: 168px;
+}
+
+#signin-form{
+  
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 300px;
+      
+      
+
+}
+
+#user,#password{
+        border-radius: 21px;
+        border: 1px solid white;
+
+}
+
+.btn{
+    border-radius: 21px;
+    border: 1px solid  rgb(117 67 44);
+    color: rgb(117 67 44);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+a{
+
+  text-decoration: none;
+  color:  rgb(50, 28, 18);
+ 
+  
+}
+
+#fp{
+  margin-top: -9px;
+   margin-bottom: 16px;
+}
+
+.btn:hover{
+  background-color: rgb(117 67 44) ;
+  color:whitesmoke;
+}
+.footer{
+    background: black;
+    bottom: 0%;
+    height:fit-content;
+    color: aliceblue;
+    text-align: center;
+    padding: 10px 0px;
+    margin-bottom: 0%;
+
+}
